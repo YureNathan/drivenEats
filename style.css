@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: #e5e5e5;
+  }
+  .topo {
+    background-color: #cf2b2b;
+    color: #fff;
+    height: 92px;
+    padding: 8px 21px;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 25%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .topo h1 {
+    font-family: "Righteous", system-ui;
+    font-size: 44px;
+    margin-bottom: 5px;
+  }
+  .top p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+  .conteudo {
+    margin: 118px 0px;
+  }
+  .conteudoPrato {
+    display: flex;
+    overflow-x: scroll;
+    margin: 7px;
+  }
+  .conteudoTitulo {
+    font-family: "Righteous", system-ui;
+    font-size: 26px;
+    margin-top: 29px;
+    padding-left: 18px;
+    color: #333333;
+  }
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+    width: 137px;
+  }
+  .conteudoCard {
+    padding: 20px;
+    width: 172px;
+    height: 210px;
+    background-color: #fff;
+    margin: 7px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .conteudoCard img {
+    width: 144px;
+    height: 87px;
+  }
+  .descricao {
+    color: #a6a6a6;
+    font-size: 15px;
+    margin: 9px 0px;
+  }
+  .preco {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  .botaoPedido {
+    height: 92px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .botaoPedido button {
+    background-color: #cbcbcb;
+    height: 60px;
+    width: 360px;
+    padding: 0px 64px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #fff;
+  }
+}
