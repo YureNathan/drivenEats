@@ -51,13 +51,14 @@
     width: 137px;
   }
   .conteudoCard {
-    padding: 20px;
+    padding: 15px;
     width: 172px;
     height: 210px;
     background-color: #fff;
     margin: 7px;
     border-radius: 9px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: #fff solid 3px;
   }
   .conteudoCard img {
     width: 144px;
@@ -93,5 +94,8 @@
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     color: #fff;
+  }
+  .selecionado {
+    border: 3px solid #32b72f;
   }
 }
