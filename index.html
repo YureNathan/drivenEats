@@ -16,26 +16,38 @@
 </head>
 
 <body>
-  <div class="topo">
-    <h1>DrivenEats</h1>
-    <p>Sua comida em 6 minutos</p>
-  </div>
   <div class="conteudo">
+    <div class="telaConfirmacao escondido">
+      <div class="confirmarPedido ">
+        <h3>Confirme seu pedido</h3>
+        <p>prato de Frango</p>
+        <p>coca-cola</p>
+        <p>pudim</p>
+        <a href="#">
+          <h3>Tudo certo, pode pedir!</h3>
+        </a>
+        <button>Cancelar</button>
+      </div>
+    </div>
+    <div class="topo">
+      <h1>DrivenEats</h1>
+      <p>Sua comida em 6 minutos</p>
+    </div>
     <h2 class="conteudoTitulo">Primeiro, seu prato</h2>
     <div class="conteudoPrato">
-      <div onclick="selecionarItem(this)" class="conteudoCard">
+      <div onclick="selecionarItemPf(this)" class="cardPrato pf">
         <img src="./imagens/pf_frango.jpg" alt="">
         <h3>Prato de Frango</h3>
         <p class="descricao">Um pouco de batata, um pouco de salada</p>
         <p class="preco">15.90</p>
       </div>
-      <div onclick="selecionarItem(this)" class="conteudoCard">
+      <div onclick="selecionarItemPf(this)" class="cardPrato pf">
         <img src="./imagens/pf_carne.jpg" alt="">
         <h3>Prato de Carne</h3>
         <p class="descricao">Um pouco de batata, um pouco de salada</p>
         <p class="preco">17.90</p>
       </div>
-      <div onclick="selecionarItem(this)" class="conteudoCard">
+      <div onclick="selecionarItemPf(this)" class="cardPrato pf">
         <img src="./imagens/pf_calabresa.png" alt="">
         <h3>Prato de Calabresa</h3>
         <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -44,19 +56,19 @@
     </div>
     <h2 class="conteudoTitulo">Agora, sua bebida</h2>
     <div class="conteudoPrato">
-      <div onclick="selecionarItem(this)" class="conteudoCard">
+      <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
         <img src="./imagens/coca.png" alt="">
         <h3>Coca-Cola</h3>
         <p class="descricao">Refrigerante geladinho</p>
         <p class="preco">6.00</p>
       </div>
-      <div onclick="selecionarItem(this)" class="conteudoCard">
+      <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
         <img src="./imagens/fanta.png" alt="">
         <h3>Fanta</h3>
         <p class="descricao">Refrigerante geladinho</p>
         <p class="preco">5.90</p>
       </div>
-      <div onclick="selecionarItem(this)" class="conteudoCard">
+      <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
         <img src="./imagens/suco.png" alt="">
         <h3>Suco de laranja</h3>
         <p class="descricao">Suco da fruta delicioso</p>
@@ -65,28 +77,29 @@
     </div>
     <h2 class="conteudoTitulo">Por fim, sua sobremesa</h2>
     <div class="conteudoPrato">
-      <div onclick="selecionarItem(this)" class="conteudoCard sobremesa">
+      <div onclick="selecionarItemSobremesa(this)" class="sobremesa cardPrato">
         <img src="./imagens/pudim.png" alt="">
         <h3>Pudim</h3>
         <p class="descricao">Feito pela vovó</p>
         <p class="preco">6.90</p>
       </div>
-      <div onclick="selecionarItem(this)" class="conteudoCard sobremesa">
+      <div onclick="selecionarItemSobremesa(this)" class="sobremesa cardPrato ">
         <img src="./imagens/mouse.png" alt="">
         <h3>Mouse</h3>
         <p class="descricao">Fofinho e cremoso</p>
         <p class="preco">3.90</p>
       </div>
-      <div onclick="selecionarItem(this)" class="conteudoCard sobremesa">
+      <div onclick="selecionarItemSobremesa(this)" class="sobremesa cardPrato ">
         <img src="./imagens/brownie.png" alt="">
         <h3>Brownie</h3>
         <p class="descricao">Delicia de chocolate</p>
         <p class="preco">7.90</p>
       </div>
     </div>
-  </div>
-  <div class="botaoPedido">
-    <button>Selecione os 3 itens para fechar o pedido</button>
+
+    <div class="botaoPedido">
+      <button onclick="finlizarPedido(this)" class="textoPedido">Selecione os 3 itens para fechar o pedido</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

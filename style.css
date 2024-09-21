@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
   .topo h1 {
     font-family: "Righteous", system-ui;
@@ -28,21 +28,21 @@
     font-size: 18px;
   }
   .conteudo {
-    margin: 118px 0px;
+    margin: 120px 0px;
+  }
+
+  .conteudoTitulo {
+    font-family: "Righteous", system-ui;
+    font-size: 26px;
+    padding-left: 18px;
+    color: #333333;
   }
   .conteudoPrato {
     display: flex;
     overflow-x: scroll;
     margin: 7px;
   }
-  .conteudoTitulo {
-    font-family: "Righteous", system-ui;
-    font-size: 26px;
-    margin-top: 29px;
-    padding-left: 18px;
-    color: #333333;
-  }
-  h3 {
+  .conteudoPrato h3 {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -50,7 +50,7 @@
     margin: 0;
     width: 137px;
   }
-  .conteudoCard {
+  .cardPrato {
     padding: 15px;
     width: 172px;
     height: 210px;
@@ -60,7 +60,7 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border: #fff solid 3px;
   }
-  .conteudoCard img {
+  .cardPrato img {
     width: 144px;
     height: 87px;
   }
@@ -84,7 +84,7 @@
     bottom: 0;
     right: 0;
   }
-  .botaoPedido button {
+  .textoPedido {
     background-color: #cbcbcb;
     height: 60px;
     width: 360px;
@@ -97,5 +97,65 @@
   }
   .selecionado {
     border: 3px solid #32b72f;
+  }
+  .ativado {
+    background-color: #32b72f;
+    color: #fff;
+  }
+  .telaConfirmacao {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+  }
+  .confirmarPedido {
+    background-color: #50d074;
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .confirmarPedido h3 {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .confirmarPedido p {
+    color: #fff;
+    text-align: center;
+  }
+  .confirmarPedido a h3 {
+    background-color: #fff;
+    color: #50d074;
+    font-size: 22px;
+    font-weight: bold;
+    width: 330px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 100px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .confirmarPedido button {
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    background-color: #50d074;
+    color: #fff;
+    margin-top: 45px;
+  }
+  .escondido {
+    display: none;
   }
 }
