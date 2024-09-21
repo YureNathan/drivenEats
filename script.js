@@ -30,7 +30,15 @@ function selecionarItemSobremesa(elemento) {
   selecionarItens(elemento, "sobremesa");
 }
 function finlizarPedido(elemento){
+  // const acessando a classe do elemento e removendo ela ao clicar no botão
   elemento.classList.remove("escondido")
+
+
 }
 
 // verificar como posso está removendo a classe do modal. 
+
+// fazer a função para pegar os valores e calcular 
+// e fazer exibir nome do prato e valor ao lado 
+// valor total 
+// depois fazer a formatação da mensagem para o whatsApp
