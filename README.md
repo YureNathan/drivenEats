@@ -1,7 +1,7 @@
 # Projeto DrivenEats
 
 <h4 align="center"> 
-	🚧 DrivenEats 🚧
+	DrivenEats 
 </h4>
 
 <p align="center">
