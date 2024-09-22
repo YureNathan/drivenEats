@@ -2,9 +2,16 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+.conteudo {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
   body {
     background-color: #e5e5e5;
+  }
+  .conteudo {
+    display: inherit;
   }
   .topo {
     background-color: #cf2b2b;
@@ -16,7 +23,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* margin-bottom: 100px; */
   }
   .topo h1 {
     font-family: "Righteous", system-ui;
@@ -87,7 +93,7 @@
   .textoPedido {
     background-color: #cbcbcb;
     height: 60px;
-    width: 360px;
+    width: 95%;
     padding: 0px 64px;
     border-radius: 50px;
     letter-spacing: 0.5px;
@@ -117,43 +123,39 @@
   }
   .confirmarPedido {
     background-color: #50d074;
-    width: 377px;
+    width: 90%;
     height: 353px;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
   }
   .confirmarPedido h3 {
     font-size: 22px;
     font-family: "Roboto", sans-serif;
     color: #fff;
     text-align: center;
-    margin-bottom: 15px;
+    padding: 8px 0px;
   }
-  .confirmarPedido p {
-    color: #fff;
-    text-align: center;
+  .totalPedido {
+    font-weight: bold;
   }
   .confirmarPedido a h3 {
     background-color: #fff;
     color: #50d074;
     font-size: 22px;
     font-weight: bold;
-    width: 330px;
-    height: 50px;
     padding: 12px;
     border-radius: 100px;
-    text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
-  .confirmarPedido button {
+  .cancelarPedido {
     font-size: 20px;
     border: none;
     height: 50px;
     background-color: #50d074;
     color: #fff;
-    margin-top: 45px;
+    margin-top: 10px;
   }
   .escondido {
     display: none;

@@ -1,125 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>DrivenEats</title>
-  </head>
 
-  <body>
-    <div class="conteudo">
-      <div class="telaConfirmacao escondido">
-        <div class="confirmarPedido">
-          <h3>Confirme seu pedido</h3>
-          <p>prato de Frango</p>
-          <p>coca-cola</p>
-          <p>pudim</p>
-          <p>TOTAL:</p>
-          <a href="#">
-            <h3>Tudo certo, pode pedir!</h3>
-          </a>
-          <button class="cancelarPedido" onclick="voltarTela()">
-            Cancelar
-          </button>
-        </div>
-      </div>
-      <div class="topo">
-        <h1>DrivenEats</h1>
-        <p>Sua comida em 6 minutos</p>
-      </div>
-      <h2 class="conteudoTitulo">Primeiro, seu prato</h2>
-      <div class="conteudoPrato">
-        <div onclick="selecionarItemPf(this)" class="cardPrato pf">
-          <img src="./imagens/pf_frango.jpg" alt="" />
-          <h3 class="titulo">Prato de Frango</h3>
-          <p class="descricao">Um pouco de batata, um pouco de salada</p>
-          <p class="preco">15.90</p>
-        </div>
-        <div onclick="selecionarItemPf(this)" class="cardPrato pf">
-          <img src="./imagens/pf_carne.jpg" alt="" />
-          <h3 class="titulo">Prato de Carne</h3>
-          <p class="descricao">Um pouco de batata, um pouco de salada</p>
-          <p class="preco">17.90</p>
-        </div>
-        <div onclick="selecionarItemPf(this)" class="cardPrato pf">
-          <img src="./imagens/pf_calabresa.png" alt="" />
-          <h3 class="titulo">Prato de Calabresa</h3>
-          <p class="descricao">Um pouco de batata, um pouco de salada</p>
-          <p class="preco">15.90</p>
-        </div>
-      </div>
-      <h2 class="conteudoTitulo">Agora, sua bebida</h2>
-      <div class="conteudoPrato">
-        <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
-          <img src="./imagens/coca.png" alt="" />
-          <h3 class="titulo">Coca-Cola</h3>
-          <p class="descricao">Refrigerante geladinho</p>
-          <p class="preco">6.00</p>
-        </div>
-        <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
-          <img src="./imagens/fanta.png" alt="" />
-          <h3 class="titulo">Fanta</h3>
-          <p class="descricao">Refrigerante geladinho</p>
-          <p class="preco">5.90</p>
-        </div>
-        <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
-          <img src="./imagens/suco.png" alt="" />
-          <h3 class="titulo">Suco de laranja</h3>
-          <p class="descricao">Suco da fruta delicioso</p>
-          <p class="preco">8.90</p>
-        </div>
-      </div>
-      <h2 class="conteudoTitulo">Por fim, sua sobremesa</h2>
-      <div class="conteudoPrato">
-        <div
-          onclick="selecionarItemSobremesa(this)"
-          class="sobremesa cardPrato"
-        >
-          <img src="./imagens/pudim.png" alt="" />
-          <h3 class="titulo">Pudim</h3>
-          <p class="descricao">Feito pela vovó</p>
-          <p class="preco">6.90</p>
-        </div>
-        <div
-          onclick="selecionarItemSobremesa(this)"
-          class="sobremesa cardPrato"
-        >
-          <img src="./imagens/mouse.png" alt="" />
-          <h3 class="titulo">Mouse</h3>
-          <p class="descricao">Fofinho e cremoso</p>
-          <p class="preco">3.90</p>
-        </div>
-        <div
-          onclick="selecionarItemSobremesa(this)"
-          class="sobremesa cardPrato"
-        >
-          <img src="./imagens/brownie.png" alt="" />
-          <h3 class="titulo">Brownie</h3>
-          <p class="descricao">Delicia de chocolate</p>
-          <p class="preco">7.90</p>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+  <title>DrivenEats</title>
+</head>
 
-      <div class="botaoPedido">
-        <button onclick="finlizarPedido()" class="textoPedido">
-          Selecione os 3 itens para fechar o pedido
+<body>
+  <div class="conteudo">
+    <div class="telaConfirmacao escondido">
+      <div onclick="pedido()" class="confirmarPedido">
+        <h3>Confirme seu pedido</h3>
+        <h3 class="nomePrato">prato de Frango</h3>
+        <h3 class="nomeBebida">coca-cola</h3>
+        <h3 class="nomeSobremesa">pudim</h3>
+        <h3 class="totalPedido">TOTAL:</h3>
+        <a onclick="mensagemWpp(this)" class="link" href="#" target="_blank">
+          <h3>Tudo certo, pode pedir!</h3>
+        </a>
+        <button class="cancelarPedido" onclick="voltarTela()">
+          Cancelar
         </button>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="topo">
+      <h1>DrivenEats</h1>
+      <p>Sua comida em 6 minutos</p>
+    </div>
+    <h2 class="conteudoTitulo">Primeiro, seu prato</h2>
+    <div class="conteudoPrato">
+      <div onclick="selecionarItemPf(this)" class="cardPrato pf">
+        <img src="./imagens/pf_frango.jpg" alt="" />
+        <h3 class="titulo">Prato de Frango</h3>
+        <p class="descricao">Um pouco de batata, um pouco de salada</p>
+        <p class="preco">15.90</p>
+      </div>
+      <div onclick="selecionarItemPf(this)" class="cardPrato pf">
+        <img src="./imagens/pf_carne.jpg" alt="" />
+        <h3 class="titulo">Prato de Carne</h3>
+        <p class="descricao">Um pouco de batata, um pouco de salada</p>
+        <p class="preco">17.90</p>
+      </div>
+      <div onclick="selecionarItemPf(this)" class="cardPrato pf">
+        <img src="./imagens/pf_calabresa.png" alt="" />
+        <h3 class="titulo">Prato de Calabresa</h3>
+        <p class="descricao">Um pouco de batata, um pouco de salada</p>
+        <p class="preco">15.90</p>
+      </div>
+    </div>
+    <h2 class="conteudoTitulo">Agora, sua bebida</h2>
+    <div class="conteudoPrato">
+      <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
+        <img src="./imagens/coca.png" alt="" />
+        <h3 class="titulo">Coca-Cola</h3>
+        <p class="descricao">Refrigerante geladinho</p>
+        <p class="preco">6.00</p>
+      </div>
+      <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
+        <img src="./imagens/fanta.png" alt="" />
+        <h3 class="titulo">Fanta</h3>
+        <p class="descricao">Refrigerante geladinho</p>
+        <p class="preco">5.90</p>
+      </div>
+      <div onclick="selecionarItemBebida(this)" class="bebida cardPrato">
+        <img src="./imagens/suco.png" alt="" />
+        <h3 class="titulo">Suco de laranja</h3>
+        <p class="descricao">Suco da fruta delicioso</p>
+        <p class="preco">8.90</p>
+      </div>
+    </div>
+    <h2 class="conteudoTitulo">Por fim, sua sobremesa</h2>
+    <div class="conteudoPrato">
+      <div onclick="selecionarItemSobremesa(this)" class="sobremesa cardPrato">
+        <img src="./imagens/pudim.png" alt="" />
+        <h3 class="titulo">Pudim</h3>
+        <p class="descricao">Feito pela vovó</p>
+        <p class="preco">6.90</p>
+      </div>
+      <div onclick="selecionarItemSobremesa(this)" class="sobremesa cardPrato">
+        <img src="./imagens/mouse.png" alt="" />
+        <h3 class="titulo">Mousse</h3>
+        <p class="descricao">Fofinho e cremoso</p>
+        <p class="preco">3.90</p>
+      </div>
+      <div onclick="selecionarItemSobremesa(this)" class="sobremesa cardPrato">
+        <img src="./imagens/brownie.png" alt="" />
+        <h3 class="titulo">Brownie</h3>
+        <p class="descricao">Delicia de chocolate</p>
+        <p class="preco">7.90</p>
+      </div>
+    </div>
+
+    <div class="botaoPedido">
+      <button onclick="finalizarPedido()" class="textoPedido" disabled>
+        Selecione os 3 itens para fechar o pedido
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
