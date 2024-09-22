@@ -48,13 +48,12 @@
     overflow-x: scroll;
     margin: 7px;
   }
-  .conteudoPrato h3 {
+  .titulo {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: #333333;
-    margin: 0;
-    width: 137px;
+
   }
   .cardPrato {
     padding: 15px;
