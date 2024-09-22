@@ -31,26 +31,26 @@ function selecionarItens(elemento, categoria) {
 // funções para pegar o nome e valor de cada item ao selecionar
 function selecionarItemPf(elemento) {
   selecionarItens(elemento, "pf");
-  const nomeElemento = elemento.querySelector(".titulo");
-  const precoElemento = elemento.querySelector(".preco");
-  nomePrato = nomeElemento.textContent;
-  precoPrato = parseFloat(precoElemento.textContent);
+  const precoElement = elemento.querySelector(".preco");
+  const nameElement = elemento.querySelector(".titulo");
+  nomePrato = nameElement.textContent;
+  precoPrato = parseFloat(precoElement.textContent);
 }
 
 function selecionarItemBebida(elemento) {
   selecionarItens(elemento, "bebida");
-  const nomeElemento = elemento.querySelector(".titulo");
-  const precoElemento = elemento.querySelector(".preco");
-  nomeBebida = nomeElemento.textContent;
-  precoBebida = parseFloat(precoElemento.textContent);
+  const precoElement = elemento.querySelector(".preco");
+  const nameElement = elemento.querySelector(".titulo");
+  nomeBebida = nameElement.textContent;
+  precoBebida = parseFloat(precoElement.textContent);
 }
 
 function selecionarItemSobremesa(elemento) {
   selecionarItens(elemento, "sobremesa");
-  const nomeElemento = elemento.querySelector(".titulo");
-  const precoElemento = elemento.querySelector(".preco");
-  nomeSobremesa = nomeElemento.textContent;
-  precoSobremesa = parseFloat(precoElemento.textContent);
+  const precoElement = elemento.querySelector(".preco");
+  const nameElement = elemento.querySelector(".titulo");
+  nomeSobremesa = nameElement.textContent;
+  precoSobremesa = parseFloat(precoElement.textContent);
 }
 // função para mostrar o modal para confirmação do pedido
 function finalizarPedido() {
@@ -71,20 +71,20 @@ function valorTotal() {
     parseFloat(precoSobremesa);
   return valor.toFixed(2);
 }
- // função para mostrar as informações do pedido no modal
+// função para mostrar as informações do pedido no modal
 function pedido() {
-  const elementoPrato = document.querySelector(".nomePrato");
-  elementoPrato.textContent = `${nomePrato}: ${precoPrato.toFixed(2)}`;
+  const nomePratoElement = document.querySelector(".nomePrato");
+  nomePratoElement.textContent = `${nomePrato}: ${precoPrato.toFixed(2)}`;
 
-  const elementoBebida = document.querySelector(".nomeBebida");
-  elementoBebida.textContent = `${nomeBebida}: ${precoBebida.toFixed(2)}`;
+  const nomeBebidaElement = document.querySelector(".nomeBebida");
+  nomeBebidaElement.textContent = `${nomeBebida}: ${precoBebida.toFixed(2)}`;
 
-  const elementoSobremesa = document.querySelector(".nomeSobremesa");
-  elementoSobremesa.textContent = `${nomeSobremesa}: ${precoSobremesa.toFixed(
+  const nomeSobremesaElement = document.querySelector(".nomeSobremesa");
+  nomeSobremesaElement.textContent = `${nomeSobremesa}: ${precoSobremesa.toFixed(
     2
   )}`;
-  const valorTotal = document.querySelector(".totalPedido");
-  valorTotal.textContent = `TOTAL: ${valorTotal()}`;
+  const totalElement = document.querySelector(".totalPedido");
+  totalElement.textContent = `TOTAL: ${valorTotal()}`;
 }
 // função que formata a mensagem para ser enviada para o WhatsApp
 function mensagemWpp() {
@@ -97,4 +97,4 @@ function mensagemWpp() {
 
   const link = document.querySelector(".link");
   link.href = `https://wa.me/?text=${string}`;
-  }
+}
